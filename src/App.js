@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './scss/app.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <div className="header">
+        <div class="header__logo">
+          <img width="38" src="./img/video-logo.svg" alt="Video logo" ></img>
+        <div>
+          <h1>Video Service</h1>
+          <p>надпись для отображения</p>
+        </div>
+        </div>
+      </div>
+      <div className="contant">
+        <div className="container">
+          <div class="content__top"></div>
+          {/* <Categories/>
+          <Sort/> */}
+        </div>
+        {/* <h2 class="content__title">All</h2> */}
+      <div class="content__item">
+        {/* <VideoBlock/> */}
+      </div>
+      </div>
     </div>
   );
 }
